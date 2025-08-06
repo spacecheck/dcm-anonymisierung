@@ -43,7 +43,7 @@ The script will create an identical structure in the output directory, but will 
 
 ## Anonymization Settings
 
-The script applies the following anonymization rules:
+The script applies the full anonymization settings outlined [here](https://github.com/KitwareMedical/dicom-anonymizer/blob/master/dicomanonymizer/dicom_anonymization_databases/dicomfields_2023.py). Only the following rules are changed:
 
 ### Modified Fields:
 - **Patient's Birth Date** (0010,0030): Only preserves the year (sets month and day to January 1st)
@@ -55,3 +55,4 @@ The script applies the following anonymization rules:
 - **Series Description** (0008,103E): Kept as is
 
 All private tags are removed during the anonymization process.
+
